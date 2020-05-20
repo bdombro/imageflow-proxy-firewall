@@ -1,0 +1,23 @@
+{
+  "name": "proxy",
+  "version": "0.0.4",
+  "description": "",
+  "author": "Brian Dombrowski <bdombro@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "update:hard": "npx ncu -u && yarn && yarn upgrade",
+    "start": "node app.js",
+    "start:dev": "ts-node-dev src/index.ts"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/koa": "^2.0.48",
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0",
+    "koa-proxy": "^1.0.0-alpha.0",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "3.4.5"
+  }
+}
