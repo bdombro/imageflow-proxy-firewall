@@ -10,5 +10,5 @@ const server = http.createServer(app.callback());
 app.use(Proxy({ host: process.env.IMAGEFLOW_URL }));
 console.log(`Proxying / to IMAGEFLOW_URL=${process.env.IMAGEFLOW_URL}`);
 
-server.listen(80);
-console.log('Listening on port 80');
+server.listen(process.env.PORT);
+console.log('Listening on port ' + process.env.PORT);
